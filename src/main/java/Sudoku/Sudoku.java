@@ -3,12 +3,12 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Sudoku extends JFrame{
+    GameBoard board = new GameBoard();
 
     public Sudoku(){
         Container contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout());
 
-        GameBoard board = new GameBoard();
 
         contentPane.add(board, BorderLayout.CENTER);
         board.newGame();

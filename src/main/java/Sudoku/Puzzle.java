@@ -1,8 +1,9 @@
 package Sudoku;
 
 public class Puzzle {
-    int[][] numbers;
-    boolean[][] isGiven;
+    int[][] numbers = new int[9][9];
+    boolean[][] isGiven = new boolean[9][9];
+
     public Puzzle() {
         super();
     }
@@ -35,12 +36,8 @@ public class Puzzle {
         for (int row = 0; row < 9; row += 1) {
             for (int column = 0; column < 9; column += 1) {
                 numbers[row][column] = currentPuzzle[row][column];
-            }
-        }
-
-        for (int row = 0; row < 9; row += 1) {
-            for (int column = 0; column < 9; column += 1) {
                 isGiven[row][column] = currentIsGiven[row][column];
+
             }
         }
     }
