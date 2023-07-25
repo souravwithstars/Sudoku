@@ -14,7 +14,7 @@ public class Cell extends JTextField {
     public static final Color BG_CORRECT_GUESS = new Color(30, 150, 30);
     public static final Color BG_WRONG_GUESS = new Color(200, 25, 25);
     public static final Color FG_WRONG_GUESS = new Color(255, 255, 255);
-    public static final Font NUMBERS_FONT = new Font("OCR A Extended", Font.PLAIN, 28);
+    public static final Font NUMBERS_FONT = new Font("OCR A Extended", Font.PLAIN, 32);
     public Cell(int row, int column) {
         this.row = row;
         this.column = column;
